@@ -16,9 +16,9 @@ parameters:
         immutable: true
         type: string
     hard:
-        default: SOFT
+        default: false
         description: Perform a hard reboot
-        type: string
+        type: boolean
     project_id:
         description: Run the action under a different project, identified by id
         type: string
@@ -30,9 +30,9 @@ parameters:
         required: true
         type: string
     soft:
-        default: SOFT
+        default: false
         description: Perform a soft reboot
-        type: string
+        type: boolean
     wait:
         default: false
         description: Wait for reboot to complete
